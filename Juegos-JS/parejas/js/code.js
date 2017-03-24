@@ -123,7 +123,7 @@
                     nombre2 = tablero[imagen2].slice(0,-5); 
                     document.getElementById("imagen"+imagen2).setAttribute("onclick", "");
                     //Ponemos un setTimeout para que de tiempo a ver la segunda imagen
-                    setTimeout("comprobar()", 200);
+                    setTimeout("comprobar()", 1000);
     
                     
 
