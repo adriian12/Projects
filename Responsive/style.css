@@ -1,0 +1,412 @@
+html {
+    height: 100%;
+    font-family: 'Arial';
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+}
+/*----------------------------------------ENCABEZADO---------------------------------------------------------------*/
+
+header {
+    margin: 0 auto;
+}
+
+#pull {
+    display: none;
+}
+
+span {
+    display: none;
+}
+
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    border-bottom: solid 1px #ddd;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 4%;
+    font-size: 1.1rem;
+}
+
+nav a {
+    color: #FFF;
+    width: 100px;
+    line-height: 40px;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+nav li:last-child a {
+    border-right: 0;
+}
+
+figure {
+    width: 100%;
+    margin: 0px;
+}
+
+.superior {
+    background-image: url(img/superior.jpg);
+    width: 99.8vw;
+    height: 35vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+/*------------------------------------------CONTENIDO------------------------------------------------------*/
+
+#content {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: -12%;
+    background-color: white;
+}
+
+#seccion p {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    font-size: 1.9rem;
+    margin-top: -2%;
+}
+
+#seccion h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#seccion .presentacion {
+    padding-top: 10%;
+}
+
+#productos {
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 90%;
+}
+/*-------------------------------------ARTICULOS----------------------------------------------------*/
+
+article {
+    width: 21%;
+    float: left;
+    margin: 0 2%;
+}
+
+article h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+article img {
+    width: 100%;
+}
+
+article p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+/*----------------------------------------SHARE--------------------------------------------------*/
+
+#compartir {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 4%;
+    text-align: center;
+    clear: both;
+}
+
+#compartir figure {
+    width: 30%;
+    display: inline-block;
+    margin: 0;
+    padding: 10% 0;
+}
+
+#compartir figure img {
+    width: 50%
+}
+/*----------------------------------------FORMULARIO---------------------------------------------------*/
+
+form {
+    background-color: #b1b1b1;
+    clear: both;
+    z-index: 1;
+    position: relative;
+    margin-bottom: -10%;
+    padding: 5% 3%;
+}
+
+fieldset {
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+}
+
+.borde_email {
+    width: 46%;
+    float: left;
+}
+
+.borde_telefono {
+    width: 46%;
+}
+
+#formulario input[type="text"] {
+    width: 98%;
+}
+
+.borde_mensaje {
+    clear: both;
+    width: 96%;
+}
+
+#formulario textarea {
+    width: 98%;
+}
+
+#enviar {
+    float: right;
+    background-color: black;
+    color: white;
+    padding: 1%;
+    margin-right: 2%;
+}
+/*--------------------------------------PIE DE PAGINA-------------------------------------------------------*/
+
+footer .inferior {
+    background-image: url(img/inferior.jpg);
+    width: 99.8vw;
+    height: 35vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#pie {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    background-color: black;
+    padding-top: 1%;
+}
+/*-------------------------------------------MEDIAQUERYS--------------------------------------------*/
+
+@media only screen (min-width: 850px) {
+    .superior {
+        background-image: url(img/superior.jpg);
+        width: 99.8vw;
+        height: 35vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    footer .inferior {
+        background-image: url(img/inferior.jpg);
+        width: 99.8vw;
+        height: 35vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    article {
+        width: 100%;
+        float: left;
+    }
+    
+    
+    #content {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: -20%;
+        background-color: white;
+    }
+    #compartir {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 4%;
+        text-align: center;
+    }
+    #compartir figure {
+        width: 30%;
+        float: left;
+        padding: 0 0;
+    }
+    #compartir figure img {
+        width: 70%
+    }
+    #pie {
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        background-color: black;
+        padding-top: 1%;
+    }
+}
+/*-----------------------------------------------------*/
+
+@media only screen and (min-width: 360px) and (max-width: 850px) {
+    
+    .superior {
+        background-image: url(img/superior.jpg);
+        width: 99.8vw;
+        height: 25vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    article {
+        width: 40%;
+        float: left;
+    }
+    
+    #content {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: -10%;
+        background-color: white;
+    }
+    #compartir {
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 4%;
+        text-align: center;
+    }
+    #compartir figure {
+        width: 30%;
+        float: left;
+        padding: 0 0;
+    }
+    #compartir figure img {
+        width: 70%
+    }
+    footer .inferior {
+        background-image: url(img/inferior.jpg);
+        width: 99.8vw;
+        height: 25vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    #pie {
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        background-color: black;
+        padding-top: 1%;
+    }
+}
+/*--------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 360px) {
+    .superior {
+        background-image: url(img/superior.jpg);
+        width: 99.8vw;
+        height: 15vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    #pull {
+        display: inline-block;
+        text-align: left;
+        margin-top: 3%;
+    }
+    span {
+        display: inline-block;
+        color: white;
+        text-align: left;
+        font-size: 2rem;
+    }
+    nav {
+        border-bottom: 0;
+        height: auto;
+        text-align: center;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+        width: 100%;
+    }
+    nav li {
+        width: 50%;
+        position: relative;
+    }
+    nav a {
+        width: 100%;
+        text-indent: 25px;
+    }
+    article {
+        width: 100%;
+        float: left;
+    }
+    #content {
+        width: 100%;
+        margin: 0 auto;
+        background-color: white;
+    }
+    #seccion p {
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: -2%;
+    }
+    #content {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: -12%;
+        background-color: white;
+    }
+    #compartir {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 4%;
+        text-align: center;
+    }
+    #compartir figure {
+        width: 100%;
+        display: inline-block;
+        margin: 0;
+        padding: 10% 0;
+    }
+    #compartir figure img {
+        width: 40%
+    }
+    .borde_email {
+        width: 97%;
+        float: left;
+    }
+    .borde_telefono {
+        width: 97%;
+    }
+    #formulario input[type="text"] {
+        width: 98%;
+    }
+    footer .inferior {
+        background-image: url(img/inferior.jpg);
+        width: 99.8vw;
+        height: 15vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+}

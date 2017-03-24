@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ACME</title>
+    <link type="text/css" href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(function() {
+                var pull = $('#pull');
+                menu = $('nav ul');
+                menuHeight = menu.height();
+
+                $(pull).on('click', function(e){
+                    e.preventDefault();
+                    menu.slideToggle();
+                });
+            });
+
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 320 && menu.is(':hidden')){
+                    menu.removeAttr('style');
+                }
+            }); 
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+            <nav>
+                <figure id="pull">
+                    <img src="img/nav.png" alt="menu" />
+                </figure>
+                <span>Menú</span>
+                <ul>
+                    <li>
+                        <a href="#">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="#reparto">SERVICIOS</a>
+                    </li>
+                    <li>
+                        <a href="#productos">PRODUCTOS</a>
+                    </li>
+                    <li>
+                        <a href="#compartir">TIENDAS</a>
+                    </li>                
+                </ul>            
+            </nav>
+            <div class="superior">        
+            </div>
+        </header>
+    <div id="content">
+        <div id="seccion">
+            <h2 class="presentacion">PRESENTACIÓN</h2>
+            </br>
+            <p>En Carnicerías ACME ponemos a su disposición las mejores carne, embutidos y platos preparados, entre otras delicias gourmet. Si tienen un evento y quieren deleitar a sus invitados con unos productos sanos, frescos y sabrosos, contacten con nostros.</p>
+            </br>
+            <h2 id="reparto">Reparto a domicilio</h2>
+            </br>
+            <p>Realicen su pedido hoy mismo y mañana lo tendrán listo en su domicilio.</p>
+            </br>
+            <h2>Corte tradicional</h2>
+            </br>
+            <p>No tenemos banejas preparadas. Nuestro corte artesano y profesional.</p>
+            </br>
+        </div>
+        <div id="productos">
+            <section>
+                <article>
+                    <h2>Calidad</h2>
+                    <img src="img/carne.jpg" />
+                    <p>Carne de calidad de los valles pirenáicos. Con las mejores garantías de sanidad y sabor.</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>Servicio</h2>
+
+                    <img src="img/entrega.jpg" />
+
+                    <p>En nuestro transporte refigerado garantizamos que cumpliremos en 24h con nuestros compromisos.</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>Restauración</h2>
+                    <img src="img/restaurantes.jpg" />
+                    <p>Servimos a los mejores restaurantes de Zaragoza. Si regentas un local de restauración llámanos.</p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2>Charcuteria</h2>
+                    <img src="img/charcuteria.jpg" />
+                    <p>Los mejores ejemplares de jamón ibérico y embutidos tradicionales. Especialistasa en charcutería.</p>
+                </article>
+            </section>
+        </div>
+        <div id="compartir">
+            <figure>
+                <a href="https://www.facebook.com/acmecarniceria/photos_stream"><img src="img/face.gif" />
+                </a>
+            </figure>
+            <figure>
+                <a href="https://plus.google.com/"><img src="img/google.png" />
+                </a>
+            </figure>
+            <figure>
+                <a href="https://goo.gl/maps/MGMtG"><img src="img/maps.png" />
+                </a>
+            </figure>
+        </div>
+        <div id="formulario">
+            <form method="post" action="">
+                <fieldset class="borde_email">
+                    <label form="email">Email</label>
+                    <input type="text" name="email" id="email" maxlength="25" placeholder="Introduzca su email">
+                </fieldset>
+                <fieldset class="borde_telefono">
+                    <label form="telefono">Teléfono</label>
+                    <input type="text" name="telefono" id="telefono" maxlength="9" placeholder="Introduzca su teléfono (opcional)">
+                </fieldset>
+                <fieldset class="borde_mensaje">
+                    <label>Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" maxlength="100" rows="6"></textarea>
+                </fieldset>
+                <fieldset class="borde_enviar">
+                    <input type="button" value="Enviar" name="enviar" id="enviar">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="inferior">        
+        </div>
+        <div id="pie">
+            <address>Calle Bomba 16. 50010 Saratoga. Tfno: 666 999 666. Fax: 999 666 999. Email: email (at) hola.com</address>
+        </div>
+    </footer>
+</body>
+
+</html>
