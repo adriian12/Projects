@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--  HE RECIBIDO LA AYUDA DE MARCOS EN EL ESTILO PARA REALIZAR ESTE EJERCICIO -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>Plantilla</title>
+<script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.2.0/prototype.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js"></script>
+<script type="text/javascript" src="Libreria/validatesp.min.js"></script>
+<script type="text/javascript">
+    
+    function muestra()
+    {
+        if(document.getElementById("edades").checked==true)
+        {   document.getElementById("menores").style.display="none";
+            document.getElementById("condiciones123").style.visibility="visible";
+            document.getElementById("labelcondiciones").style.visibility="visible";
+            document.getElementById("mayor").style.display="inherit"
+        }
+        else
+        {   document.getElementById("mayor").style.display="none"
+            document.getElementById("menores").style.display="inherit";
+            document.getElementById("condiciones123").style.visibility="hidden";
+            document.getElementById("labelcondiciones").style.visibility="hidden";
+        }
+    }
+</script>
+<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<style>
+        *{font-family: 'Raleway', sans-serif;}
+        h2 {margin-bottom: 1.5rem;
+            font-size: 1rem;text-align: center;}
+        span {color: #6d6c6c;
+            font-size: 0.8rem;
+            text-align: left;
+            display: block;}
+        
+        input:focus {background-color: #f3f85f}
+        input[type="text"]{display: block;
+                            margin-bottom:0.5rem;cursor: pointer;}
+        input[type="radio"] {display:inline-block;cursor: pointer;}
+        input[type="password"]{margin-bottom: 0.5rem;cursor: pointer;}
+        input[type="file"]{margin-bottom: 1.5rem; 
+                            display: inline-block;cursor: pointer;}
+        input[type="date"]{margin-bottom: 1.5rem;cursor: pointer;}
+        input[type="submit"]{display:inline-block;cursor: pointer;} 
+        input[type="reset"]{display:inline-block;cursor: pointer;}
+        input[type="checkbox"]{display: inline-block;cursor: pointer;}
+        input[id="precio"]{display: inline;width:10%;cursor: pointer;}
+        input[id="nombre1"]{width:85%;cursor: pointer;}
+        input[id="nombre2"]{margin: 0; display:inline;cursor: pointer;}
+        input[id="apellidos1"]{display:inline;width: 70%;margin:0 auto;cursor: pointer;}
+        input[id="apellidos2"]{display:inline;width: 70%;margin:0 auto;cursor: pointer;}
+        input[id="direccion"]{display:inline;margin-bottom: 0;width: 70%;cursor: pointer;}
+        input[id="direccion1"]{display:inline;margin-bottom: 0;width: 100%;cursor: pointer;}
+        input[name="cp"]{width: 30%;margin-bottom: 0;cursor: pointer;}
+        input[name="municipio"]{margin-bottom: 0px;width: 40%;cursor: pointer;}
+        input[id="email"]{width:70%;}
+        input[name="telefono1"]{float: left;margin-bottom: 0;cursor: pointer;}
+        input[name="telefono2"]{float: left;margin-bottom: 0;width:100%;cursor: pointer;}
+        label {display:block;}
+        label[for="checkbox"]{display:inline-block;}
+        label[for="foto"]{display: inline;}
+        label[for="precio"]{display: inline-block;}
+        label[for="incluirfoto"]{display: inline;}
+        label[for="impuestos"]{display:inline;}
+        label[for="nombre2"]{margin-bottom: 30%;margin-right: 1rem;}
+        label[for="apellidos"]{margin-right: 1rem;}
+        label[for="direccion"]{display:inline;margin-right: 0.8rem;float:left;}
+        label[for="email"]{margin-right: 2.3rem;}
+        label[for="contrasena"]{margin-top: 4.5rem;}
+        label[for="confirmar"]{margin-top: 2.5rem;}
+       
+        textarea{display:block;
+            margin-bottom: 1rem;}
+        select[id="provincia"] {display: inline-block;
+            margin-bottom: 1rem;}
+        select[name="provincia2"]{width: 30%;}
+        select[name="pais"]{width: 41%}
+        .boletin {margin-bottom: 1rem;}
+        .inputnombre {width: 90%;float:left;padding-bottom: 2%;border-bottom: }
+        .form3 {width: 70%;margin:0 auto;clear:both;}
+        .nombreyapellidos{float: left;}
+        .partearriba{border: 1px 0px solid #6d6c6c;clear: both;}
+        .partecentral{clear:both;}
+        .inputdireccion{float:left;width:80%;}
+        .inputdireccion1{float:left;width:50%;}
+        .inputdireccion2{float:left;width:90%;margin-top: 2%;border-bottom: solid 1px #000}
+        .direccion{float:left;display:block;width:90%;margin-top: 2%;}
+        .direccion1{float:left;display:block;width:50%;}
+        .divinputdireccion{float:left;width:89%;}
+        .bajoinput{font-size: 0.8rem;display:block;text-align: left;margin-bottom: 0.6rem;}
+        .bajoinput1{font-size: 0.8rem;display:block;text-align: right;margin-bottom: 0.6rem;}
+        .arriba{width:30%;float:left;margin-right: 3%;background-color:cornflowerblue;border:solid 2px #004eff;border-bottom-style: groove;}
+        .hidden{float:left;opacity: 0;margin-right: 1.2rem;}
+        .telefono {float:left;margin-right: 1rem;}
+        .divtelefono{width:100%;}
+        .fijo{float:left;margin-right: 40%;}
+        .movil{float:left;width:30%;}
+        .enviar{margin-left: 60%;margin-top: 2%;width:13.5%;height: 3rem;border:none;background-image:url(boton_enviar.jpg) ;background-repeat: no-repeat;display: inline}
+        .menordedad{clear:both;margin-left:5rem;display: inherit; border-bottom:solid 1px #000;width:90% }
+        .mayoredad{clear:both;margin-left:5rem;display: none; border-bottom:solid 1px #000;width:90%}
+        .condiciones{padding-top: 5rem;display: inline-block}
+        fieldset{border-radius:10% 10% 10% 10%;border-style: ridge;} 
+    </style>
+</head>
+<body>
+
+        <h2>Formulario de Alta</h2>
+    <form action="" method="" name="validar">
+        <div class="partearriba">
+            <div class="nombreyapellidos">
+                <label for="nombre2">Nombre</label>
+                <label for="apellidos">Apellidos</label>
+                <label for="contrasena">Contraseña</label>
+                <label for="confirmar">Contraseña</label>
+        </div>
+        <div class="inputnombre">
+            <input type="text" id="nombre2" name="nombre2" />
+            <span class="bajoinput">Nombre</span>
+            <input type="text" id="apellidos1" name="apellidos1" />
+            <span class="bajoinput">Primer apellido</span>
+            <input type="text" id="apellidos2" name="apellidos2" />
+            <span class="bajoinput">Segundo apellido</span>
+            <input type="password" id="contrasena" name="contrasena">
+            <span class="bajoinput">Contraseña</span>
+            <input type="password" id="confirmar" name="confirmar">
+            <span class="bajoinput">Confirmar contraseña</span>
+        </div>
+        </div>
+        <div class="partecentral">
+            <div class="direccion">
+                <label for="direccion">Dirección</label>
+                <div class="divinputdireccion">
+                    <input type="text" id="direccion" name="direccion" />
+                    <span class="bajoinput">Calle, número, piso, puerta</span>
+                </div>
+            </div>
+            <div class="direccion1">
+                <div class="hidden">anything</div>
+            <div class="inputdireccion">
+                <input type="text" name="cp" />
+                <span class="bajoinput">Código Postal</span>
+                <select name="provincia2">
+                    <option value="" selected="selected">- Selecciona -</option>
+                    <option value="Baleares">Baleares</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Madrid">Madrid</option> 
+                </select>
+                <span class="bajoinput">Provincia</span>
+            </div>
+                
+            </div>
+            <div class="inputdireccion1">
+                <input type="text" name="municipio">
+                <span class="bajoinput">Municipio</span>
+                <select name="pais">
+                    <option value="selecciona">- Selecciona -</option>
+                    <option value="España">España</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Francia">Francia</option> 
+                </select>
+                <span class="bajoinput">Pais</span>
+        </div>
+    </div>
+        <div class="partearriba">
+            <div class="nombreyapellidos">
+                <label for="email">Email</label>
+                
+        </div>
+        <div class="inputnombre">
+            <input type="text" id="email" name="email" />
+            <input type="checkbox" name="edad" id="edades" onclick="muestra()">
+            <label for="edad" name="edad1" style="display:inline" >Si, soy mayor de 18 años</label>
+        </div>
+        </div>
+        <div class="mayoredad" id="mayor">
+            <label for="DNI">DNI</label>
+            <input type="text" name="DNI"/>
+        </div>
+        <div class="menordedad" id="menores">
+            <label for="tutor">Nombre del tutor</label>
+            <input type="text" name="tutor"/>
+            <label for="DNItutor">DNI del tutor</label>
+            <input type="text" name="DNItutor"/>
+        </div>
+        <div class="divtelefono">
+                <div class="telefono">Telefono</div>
+        <div class="inputdireccion2">
+            <div class="fijo">
+                <input type="text" name="telefono1">
+                <span class="bajoinput">Fijo</span>
+            </div>
+            <div class="movil">
+                <input type="text" name="telefono2">
+                <span class="bajoinput">Movil</span>
+            </div>
+        </div>
+        <div class="condiciones">
+            <label for="checkbox" name="condiciones" id="labelcondiciones" style="visibility: hidden">Acepto las condiciones de uso</label>
+            <input type="checkbox" name="condiciones" id="condiciones123" name="checkbox" style="visibility: hidden"/>
+        </div>
+            <input class="enviar" type="submit" src="boton_enviar.jpg">
+                
+    </form>
+    
+    <script>
+    var texto= document
+    var validator = new FormValidator('validar', [{
+    name: 'nombre2',
+    display: 'Nombre',
+    rules: 'required|alpha'
+}, {
+    name: 'apellidos1',
+    display:'Primer apellido',
+    rules: 'required|alpha'
+},{
+    name: 'apellidos2',
+    display:'Segundo apellido',
+    rules: 'required|alpha'
+},
+{
+    name: 'contrasena',
+    rules: 'required',
+    display: 'Contraseña' 
+}, 
+   {
+    name: 'confirmar',
+    display: 'Confirmar Contraseña ',
+    rules: 'required|matches[contrasena]'
+}, {
+    name: 'email',
+    display:'email',
+    rules:'valid_email'
+    
+   
+}, {
+    name: 'direccion',
+    display: 'Direccion',
+    rules: 'requiered'
+},{
+    name: 'cp',
+    display:'Cp ',
+    rules:'required|numeric'
+},{
+    name:'municipio',
+    display:'Municipio',
+    rules:'required|alpha'
+},{
+    name:'telefono2',
+    display:'Movil',
+    rules:'required|numeric'
+},{
+    name:'checkbox',
+    display:'checkbox',
+    rules:'required'
+},
+], function(errors, event) {
+    if (errors.length >= 0) {
+        var errorString = '';
+
+        for (var i = 0, errorLength = errors.length; i < errorLength; i++) {
+            errorString += errors[i].message + "\n";
+    }
+        alert(errorString);
+    }
+    else {alert("Todo Correcto")}
+});
+</script>
+</body>
+</html>
